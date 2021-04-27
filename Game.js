@@ -29,14 +29,49 @@ class Game{
        // car3=createSprite(500,200);
        // car4=createSprite(700,200);
         bunnys=[bunny1,bunny2];
-        for(var i=50;i<=displayWidth;i=i+300){
-            bush1=createSprite(i,400);
-            bush1.addImage(bushImg);
+
+        
+        bush1=createSprite(800,400);
+        bush1.addImage(bushImg);
+        bush1.scale=0.75;
+
+        bush2=createSprite(200,900);
+        bush2.addImage(bushImg);
+        bush2.scale=0.75;
+
+        bush3=createSprite(500,60);
+        bush3.addImage(bushImg);
+        bush3.scale=0.75;
+
+        bush4=createSprite(1500,100);
+        bush4.addImage(bushImg);
+        bush4.scale=0.75;
+
+        bush5=createSprite(1700,300);
+        bush5.addImage(bushImg);
+        bush5.scale=0.75;
+
+        bush6=createSprite(1700,700);
+        bush6.addImage(bushImg);
+        bush6.scale=0.75;
+
+        bush7=createSprite(700,700);
+        bush7.addImage(bushImg);
+        bush7.scale=0.75;
+
+        bush8=createSprite(1100,750);
+        bush8.addImage(bushImg);
+        bush8.scale=0.75;
+
+        bush9=createSprite(1200,500);
+        bush9.addImage(bushImg);
+        bush9.scale=0.75;
+
+        for(var i=500;i<=displayWidth;i=i+200){
+            carrot1=createSprite(i,random(100,1000));
+            carrot1.addImage(carrotimg);
+            carrot1.scale=0.15
         }
-        // bush1=createSprite(800,400);
-        // bush1.addImage(bushImg)
-        // bush2=createSprite(200,900);
-        // bush2.addImage(bushImg);
     }
     play(){
         form.hide();
@@ -64,8 +99,8 @@ class Game{
                     //ellipse(x,y,60,60);
                     text(allPlayers[plr].name,x-20,y+20);
                     //camera.position.x=displayWidth/2;
-                    camera.position.x=bunnys[index-1].x
-                    camera.position.y=displayHeight/2;
+                    //camera.position.x=bunnys[index-1].x
+                    //camera.position.y=displayHeight/2;
                 }
             }
         }

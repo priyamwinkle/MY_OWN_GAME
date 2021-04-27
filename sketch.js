@@ -1,5 +1,5 @@
-var player,form,game,bunny1,bunny2,bunnyimg,carrot,carrotimg,bunny2img,bunnys;
-var gameState=0, playerCount=0,allPlayers,backgroundImg,bushes,bush1,bush2,bush3,bush4,bush5,bushImg;
+var player,form,game,bunny1,bunny2,bunnyimg,carrot1,carrot2,carrot3,carrot4,carrot5,carrot6,carrot7,carrot8,carrot9,carrot10,carrotimg,bunny2img,bunnys;
+var gameState=0, playerCount=0,allPlayers,backgroundImg,bushes,bush1,bush2,bush3,bush4,bush5,bush6,bush7,bush8,bush9,bushImg;
 var bunny1score=0;
 var bunny2score=0;
 var database;
@@ -20,8 +20,6 @@ function setup() {
     game.getState();
     game.start();
     
-    
-
 }
 
 function draw() {
